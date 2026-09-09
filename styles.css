@@ -31,7 +31,7 @@ hr {
     border-style: solid;
     border-width: 1px;
     transition: padding 0.3s ease;
-    transition: border-radius 0.3s ease;
+    transition: border-radius 0.5s ease;
 }
 
 .downloadCard:hover {
