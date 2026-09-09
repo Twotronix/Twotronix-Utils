@@ -5,6 +5,7 @@
     --btnFont: "consolas", "monospace";
     --cardGrad: linear-gradient(0deg, hsl(0, 0%, 5%), hsl(0, 0%, 5%)66.67%, hsl(0, 0%, 10%));
     --bdrCol: hsla(0, 0%, 100%, 0.3);
+    --btnHov: hsl(0, 0%, 20%);
 }
 body {
     display: flex;
@@ -29,6 +30,11 @@ hr {
     border-radius: 2em;
     border-style: solid;
     border-width: 1px;
+    transition: padding 0.3s ease;
+}
+
+.downloadCard:hover {
+    padding: 4.5em;
 }
 
 .downloadButton {
@@ -40,7 +46,14 @@ hr {
     text-decoration: none;
     color: var(--textCol);
     text-align: center;
+    transition: background-color 0.3s ease;
+
 }
+.downloadButton:hover {
+    background-color: var(--btnHov);
+    border-color: var(--bdrCol);
+}
+
 
 
 body {
